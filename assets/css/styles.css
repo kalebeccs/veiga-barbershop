@@ -13,7 +13,7 @@
   --border-color: hsl(0, 0%, 65%);
   --container-color: hsla(0, 0%, 15%, .8);
   --black-color: hsl(0, 0%, 0%);
-  
+
   /*Color mode HSLA(hue, saturation, lightness, alpha)*/
   --header-background: hsla(0, 0%, 0%, .7);
   --header-shadow: hsla(0, 0%, 30%, .15);
@@ -135,6 +135,7 @@ img {
   opacity: 0;
   pointer-events: none;
   transition: opacity .4s;
+  overflow-y:scroll;
 }
 
 .login__close,
@@ -257,6 +258,7 @@ img {
   text-align: center;
   transform: translateY(-1rem);
   transition: transform .4s;
+  margin-bottom: 2.5rem;
 }
 
 .login__title,
@@ -437,6 +439,12 @@ img {
 .news__title{
   font-size: var(--h1-font-size);
   padding-block: 2.5rem;
+  text-shadow: 0 4px 24px var(--header-background);
+}
+
+.news__tile-img{
+  margin-top: .5rem;
+  filter: drop-shadow(0 4px 24px var(--header-background));
 }
 
 .news__cards{
