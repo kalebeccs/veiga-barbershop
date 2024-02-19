@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+      
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+      
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+      <title>Home | Barbearia Veiga</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">Barbearia Veiga</a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">Home</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">Services</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">Schedule</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">News</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">Contact Me</a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <div class="nav__actions">
+               <!-- Login button -->
+               <i class="ri-user-line nav__login" id="login-btn"></i>
+
+               <!-- Toggle button -->
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line"></i>
+               </div>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== LOGIN ====================-->
+      <div class="login" id="login">
+         <form action="" class="login__form">
+            <h2 class="login__title">Log In</h2>
+
+            <div class="login__group">
+               <div>
+                  <label for="login-email" class="login__label">Email</label>
+                  <input type="email" placeholder="Write your email" id="login-email" class="login__input">
+               </div>
+
+               <div>
+                  <label for="login-password" class="login__label">Password</label>
+                  <input type="password" placeholder="Enter your password" id="login-password" class="login__input">
+               </div>
+            </div>
+
+            <div>
+               <p class="login__signup">
+                  You do not have an account? <a href="#" id="login-sign-up">Sign up</a>
+               </p>
+
+               <a href="#" class="login__forgot" id="login-forgot">
+                  You forgot your password
+               </a>
+
+               <button type="submit" class="login__button">Log In</button>
+            </div>
+         </form>
+
+         <i class="ri-close-line login__close" id="login-close"></i>
+      </div>
+
+      <!--==================== FORGOT ====================-->
+      <div class="forgot" id="forgot">
+         <form action="" class="forgot__form">
+            <h2 class="forgot__title">Forgot your password</h2>
+
+            <div class="forgot__group">
+               <div>
+                  <label for="forgot-email" class="forgot__label">Email</label>
+                  <input type="email" placeholder="Write your email" id="forgot-email" class="forgot__input">
+               </div>
+            </div>
+
+            <div>
+               <p class="forgot__login">
+                  Do you want to try again? <a href="#" id="forgot-log-in">Log In</a>
+               </p>
+
+               <button type="submit" class="forgot__button">Send</button>
+            </div>
+         </form>
+
+         <i class="ri-close-line forgot__close" id="forgot-close"></i>
+      </div>
+
+      <!--==================== REGISTER ====================-->
+      <div class="register" id="register">
+         <form action="" class="register__form">
+            <h2 class="register__title">Sign Up</h2>
+
+            <div class="register__group">
+               <div>
+                  <label for="name" class="register__label">Name</label>
+                  <input type="text" placeholder="Write your name" id="name" class="register__input">
+               </div>
+
+               <div>
+                  <label for="lastname" class="register__label">Lastname</label>
+                  <input type="text" placeholder="Write your lastname" id="lastname" class="register__input">
+               </div>
+
+               <div>
+                  <label for="phone" class="register__label">Phone</label>
+                  <input type="email" placeholder="Enter your phone" id="phone" class="register__input">
+               </div>
+               
+               <div>
+                  <label for="register-email" class="register__label">Email</label>
+                  <input type="email" placeholder="Write your email" id="register-email" class="register__input">
+               </div>
+
+               <div>
+                  <label for="register-password" class="register__label">Password</label>
+                  <input type="password" placeholder="Enter your password" id="register-password" class="register__input">
+               </div>
+
+               <div>
+                  <label for="confirm-password" class="register__label">Confirm Password</label>
+                  <input type="password" placeholder="Repeat your password" id="confirm-password" class="register__input">
+               </div>
+            </div>
+
+            <div>
+               <p class="register__login">
+                  You do have an account? <a href="#" id="register-log-in">Log In</a>
+               </p>
+
+               <button type="submit" class="register__button">Register</button>
+            </div>
+         </form>
+
+         <i class="ri-close-line register__close" id="register-close"></i>
+      </div>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <img src="./assets/img/bg-image.jpg" alt="" class="main__bg">
+
+         <section class="news">
+            <h2 class="news__title">News</h2>
+   
+            <div class="news__cards swiper">
+               <div class="card__content">
+                  <div class="swiper-wrapper" id="card-wrapper">
+   
+                  </div>
+               </div>
+   
+               <!-- Navigation buttons -->
+               <div class="swiper-button-prev">
+                  <i class="ri-arrow-left-s-line"></i>
+               </div>
+   
+               <div class="swiper-button-next">
+                  <i class="ri-arrow-right-s-line"></i>
+               </div>
+   
+               <!-- Pagination -->
+               <div class="swiper-pagination"></div>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         
+      </footer>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="./assets/js/swiper-bundle.min.js"></script>
+      
+      <!--=============== MAIN JS ===============-->
+      <script src="./assets/js/main.js"></script>
+   </body>
+</html>
