@@ -11,10 +11,10 @@
   --second-color: hsl(38, 13%, 48%);
   --white-color: hsl(0, 0%, 95%);
   --border-color: hsl(0, 0%, 65%);
-  --container-color: hsla(0, 0%, 15%, .8);
   --black-color: hsl(0, 0%, 0%);
-
+  
   /*Color mode HSLA(hue, saturation, lightness, alpha)*/
+  --container-color: hsla(0, 0%, 15%, .8);
   --header-background: hsla(0, 0%, 0%, .7);
   --header-shadow: hsla(0, 0%, 30%, .15);
   --background-modal: hsla(0, 1%, 17%, 0.1);
@@ -360,6 +360,17 @@ img {
 .forgot__form,
 .register__form{
   transform: translateY(1rem);
+}
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+  width: .6rem;
+  background-color: hsl(0, 0%, 12%);
+}
+
+::-webkit-scrollbar-thumb{
+  width: .6rem;
+  background-color: hsl(0, 0%, 20%);
 }
 
 /*=============== BREAKPOINTS ===============*/
