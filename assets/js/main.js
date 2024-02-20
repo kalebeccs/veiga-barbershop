@@ -13,6 +13,15 @@ navClose.addEventListener('click', () => {
     navMenu.classList.remove('show-menu')
 })
 
+//==> Close menu after clicking a link, Mobile
+const navLink = document.querySelectorAll('.nav__link')
+
+const linkAction = () => {
+    const navMenu = document.getElementById('nav-menu')
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(link => link.addEventListener('click', linkAction))
+
 /*=============== LOGIN ===============*/
 const login = document.getElementById('login'),
       loginBtn = document.getElementById('login-btn'),
@@ -74,32 +83,19 @@ registerToLogin.addEventListener('click', () => {
     login.classList.add('show-login')
 })
 
-/*=============== SWIPER JS ===============*/
-let swiperCards = new Swiper('.card__content', {
-    loop: true,
-    spaceBetween: 32,
-    grabCursor: true,
-  
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      dynamicBullets: true,
-    },
-  
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+/*=============== SCHEDULE ===============*/
+const scheduleToRegister = document.getElementById('schedule-register'),
+      scheduleToLogin = document.getElementById('schedule-login')
 
-    breakpoints:{
-        600:{
-            slidesPerView: 2,
-        },
-        968:{
-            slidesPerView: 3,
-        },
-    },
-  });
+/* Register show */
+scheduleToRegister.addEventListener('click', () => {
+    register.classList.add('show-register')
+})
+
+/* Login show */
+scheduleToLogin.addEventListener('click', () => {
+    login.classList.add('show-login')
+})
 
 /*=============== FEED RSS ===============*/
 const loadRSS = (feedSrc) => {
@@ -149,3 +145,30 @@ const showRSS = (json) => {
 }
 
 window.onload = loadRSS('https://api.rss2json.com/v1/api.json?rss_url=https://www.fashionbeans.com/feed/')
+
+/*=============== SWIPER JS ===============*/
+let swiperCards = new Swiper('.card__content', {
+    loop: true,
+    spaceBetween: 32,
+    grabCursor: true,
+  
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+    },
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints:{
+        600:{
+            slidesPerView: 2,
+        },
+        968:{
+            slidesPerView: 3,
+        },
+    },
+  });
