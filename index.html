@@ -1,212 +1,326 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
-      
-      <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
-      
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
-      <title>Home | Barbearia Veiga</title>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         <nav class="nav container">
-            <a href="#" class="nav__logo">Barbearia Veiga</a>
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
-            <div class="nav__menu" id="nav-menu">
-               <ul class="nav__list">
-                  <li class="nav__item">
-                     <a href="#" class="nav__link">Home</a>
-                  </li>
+   <!--=============== SWIPER CSS ===============-->
+   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
 
-                  <li class="nav__item">
-                     <a href="#" class="nav__link">Services</a>
-                  </li>
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
 
-                  <li class="nav__item">
-                     <a href="#" class="nav__link">Schedule</a>
-                  </li>
+   <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+   <title>Home | Veiga Barbershop</title>
+</head>
 
-                  <li class="nav__item">
-                     <a href="#" class="nav__link">News</a>
-                  </li>
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav__logo">
+            <img class="nav__logo-img" src="./assets/img/logo-border.png" alt="Logo Veiga Barbershop">
+            Veiga Barbershop
+         </a>
 
-                  <li class="nav__item">
-                     <a href="#" class="nav__link">Contact Me</a>
-                  </li>
-               </ul>
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="#" class="nav__link">Home</a>
+               </li>
 
-               <!-- Close button -->
-               <div class="nav__close" id="nav-close">
-                  <i class="ri-close-line"></i>
-               </div>
+               <li class="nav__item">
+                  <a href="#services" class="nav__link">Services</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="#schedule" class="nav__link">Schedule</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="#news" class="nav__link">News</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="#contact" class="nav__link">Contact Me</a>
+               </li>
+            </ul>
+
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-line"></i>
             </div>
+         </div>
 
-            <div class="nav__actions">
-               <!-- Login button -->
-               <i class="ri-user-line nav__login" id="login-btn"></i>
+         <div class="nav__actions">
+            <!-- Login button -->
+            <i class="ri-user-line nav__login" id="login-btn"></i>
 
-               <!-- Toggle button -->
-               <div class="nav__toggle" id="nav-toggle">
-                  <i class="ri-menu-line"></i>
-               </div>
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
             </div>
-         </nav>
-      </header>
+         </div>
+      </nav>
+   </header>
 
-      <!--==================== LOGIN ====================-->
-      <div class="login" id="login">
-         <form action="" class="login__form">
-            <h2 class="login__title">Log In</h2>
+   <!--==================== LOGIN ====================-->
+   <div class="login" id="login">
+      <form action="" class="login__form">
+         <h2 class="login__title">Log In</h2>
 
-            <div class="login__group">
-               <div>
-                  <label for="login-email" class="login__label">Email</label>
-                  <input type="email" placeholder="Write your email" id="login-email" class="login__input">
-               </div>
-
-               <div>
-                  <label for="login-password" class="login__label">Password</label>
-                  <input type="password" placeholder="Enter your password" id="login-password" class="login__input">
-               </div>
+         <div class="login__group">
+            <div>
+               <label for="login-email" class="login__label">Email</label>
+               <input type="email" placeholder="Write your email" id="login-email" class="login__input">
             </div>
 
             <div>
-               <p class="login__signup">
-                  You do not have an account? <a href="#" id="login-sign-up">Sign up</a>
-               </p>
-
-               <a href="#" class="login__forgot" id="login-forgot">
-                  You forgot your password
-               </a>
-
-               <button type="submit" class="login__button">Log In</button>
+               <label for="login-password" class="login__label">Password</label>
+               <input type="password" placeholder="Enter your password" id="login-password" class="login__input">
             </div>
-         </form>
+         </div>
 
-         <i class="ri-close-line login__close" id="login-close"></i>
-      </div>
+         <div>
+            <p class="login__signup">
+               You do not have an account? <a href="#" id="login-sign-up">Sign up</a>
+            </p>
 
-      <!--==================== FORGOT ====================-->
-      <div class="forgot" id="forgot">
-         <form action="" class="forgot__form">
-            <h2 class="forgot__title">Forgot your password</h2>
+            <a href="#" class="login__forgot" id="login-forgot">
+               You forgot your password
+            </a>
 
-            <div class="forgot__group">
-               <div>
-                  <label for="forgot-email" class="forgot__label">Email</label>
-                  <input type="email" placeholder="Write your email" id="forgot-email" class="forgot__input">
-               </div>
+            <button type="submit" class="login__button">Log In</button>
+         </div>
+      </form>
+
+      <i class="ri-close-line login__close" id="login-close"></i>
+   </div>
+
+   <!--==================== FORGOT ====================-->
+   <div class="forgot" id="forgot">
+      <form action="" class="forgot__form">
+         <h2 class="forgot__title">Forgot your password</h2>
+
+         <div class="forgot__group">
+            <div>
+               <label for="forgot-email" class="forgot__label">Email</label>
+               <input type="email" placeholder="Write your email" id="forgot-email" class="forgot__input">
+            </div>
+         </div>
+
+         <div>
+            <p class="forgot__login">
+               Do you want to try again? <a href="#" id="forgot-log-in">Log In</a>
+            </p>
+
+            <button type="submit" class="forgot__button">Send</button>
+         </div>
+      </form>
+
+      <i class="ri-close-line forgot__close" id="forgot-close"></i>
+   </div>
+
+   <!--==================== REGISTER ====================-->
+   <div class="register" id="register">
+      <form action="" class="register__form">
+         <h2 class="register__title">Sign Up</h2>
+
+         <div class="register__group">
+            <div>
+               <label for="name" class="register__label">Name</label>
+               <input type="text" placeholder="Write your name" id="name" class="register__input">
             </div>
 
             <div>
-               <p class="forgot__login">
-                  Do you want to try again? <a href="#" id="forgot-log-in">Log In</a>
-               </p>
-
-               <button type="submit" class="forgot__button">Send</button>
-            </div>
-         </form>
-
-         <i class="ri-close-line forgot__close" id="forgot-close"></i>
-      </div>
-
-      <!--==================== REGISTER ====================-->
-      <div class="register" id="register">
-         <form action="" class="register__form">
-            <h2 class="register__title">Sign Up</h2>
-
-            <div class="register__group">
-               <div>
-                  <label for="name" class="register__label">Name</label>
-                  <input type="text" placeholder="Write your name" id="name" class="register__input">
-               </div>
-
-               <div>
-                  <label for="lastname" class="register__label">Lastname</label>
-                  <input type="text" placeholder="Write your lastname" id="lastname" class="register__input">
-               </div>
-
-               <div>
-                  <label for="phone" class="register__label">Phone</label>
-                  <input type="email" placeholder="Enter your phone" id="phone" class="register__input">
-               </div>
-               
-               <div>
-                  <label for="register-email" class="register__label">Email</label>
-                  <input type="email" placeholder="Write your email" id="register-email" class="register__input">
-               </div>
-
-               <div>
-                  <label for="register-password" class="register__label">Password</label>
-                  <input type="password" placeholder="Enter your password" id="register-password" class="register__input">
-               </div>
-
-               <div>
-                  <label for="confirm-password" class="register__label">Confirm Password</label>
-                  <input type="password" placeholder="Repeat your password" id="confirm-password" class="register__input">
-               </div>
+               <label for="lastname" class="register__label">Lastname</label>
+               <input type="text" placeholder="Write your lastname" id="lastname" class="register__input">
             </div>
 
             <div>
-               <p class="register__login">
-                  You do have an account? <a href="#" id="register-log-in">Log In</a>
-               </p>
-
-               <button type="submit" class="register__button">Register</button>
+               <label for="phone" class="register__label">Phone</label>
+               <input type="number" placeholder="Enter your phone" id="phone" class="register__input">
             </div>
-         </form>
 
-         <i class="ri-close-line register__close" id="register-close"></i>
-      </div>
+            <div>
+               <label for="register-email" class="register__label">Email</label>
+               <input type="email" placeholder="Write your email" id="register-email" class="register__input">
+            </div>
 
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <img src="./assets/img/bg-image.jpg" alt="" class="main__bg">
+            <div>
+               <label for="register-password" class="register__label">Password</label>
+               <input type="password" placeholder="Enter your password" id="register-password" class="register__input">
+            </div>
 
-         <section class="news">
-            <h2 class="news__title">News by <img class="news__tile-img" src="./assets/img/fashionbeans-logo.png" alt="fashionbeans logo"></h2>
+            <div>
+               <label for="confirm-password" class="register__label">Confirm Password</label>
+               <input type="password" placeholder="Repeat your password" id="confirm-password" class="register__input">
+            </div>
+         </div>
+
+         <div>
+            <p class="register__login">
+               You do have an account? <a href="#" id="register-log-in">Log In</a>
+            </p>
+
+            <button type="submit" class="register__button">Register</button>
+         </div>
+      </form>
+
+      <i class="ri-close-line register__close" id="register-close"></i>
+   </div>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== BANNER ====================-->
+      <section class="banner" id="banner">
+         <h1 class="banner__title">VEIGA BARBERSHOP</h1>
+         <a href="#schedule" class="banner__button">Mark your cut</a>
+         <img src="./assets/img/bg-image.jpg" alt="" class="banner__img">
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services" id="services">
+         <div class="services__container">
+            <div class="services__text">
+               <h2 class="services__title">What services can you expect</h2>
+               <p class="services__description">
+                  Here you will find a haircut with attention to detail, from classic to modern styles, and a relaxed shave
+                  using hot towels or just a beard design.
+               </p>
+            </div>
    
-            <div class="news__cards swiper">
-               <div class="card__content">
-                  <div class="swiper-wrapper" id="card-wrapper">
-   
+            <div class="services__images">
+               <img class="services__img" src="./assets/img/electric shaver.png" alt="electric shaver image">
+               <img class="services__img" src="./assets/img/scissor.png" alt="scissor image">
+               <img class="services__img" src="./assets/img/razor.png" alt="razor image">
+            </div>
+         </div>
+      </section>
+
+      <!--==================== SCHEDULE ====================-->
+      <section class="schedule" id="schedule">
+         <h2 class="schedule__title">Schedule</h2>
+
+         <div class="schedule__notconnected">
+            <p class="notconnected__description">
+               It looks like you are not logged in yet, create an account or log in first.
+            </p>
+            <div class="notconnected__actions">
+               <button class="notconnected__link" id="schedule-register">Create account</button>
+               <button class="notconnected__link" id="schedule-login">Log In</button>
+            </div>
+            <span class="notconnected__blur"></span>
+         </div>
+      </section>
+
+      <!--==================== NEWS ====================-->
+      <section class="news" id="news">
+         <h2 class="news__title">News by <img class="news__tile-img" src="./assets/img/fashionbeans-logo.png"
+               alt="fashionbeans logo"></h2>
+
+         <div class="news__cards swiper">
+            <div class="card__content">
+               <div class="swiper-wrapper" id="card-wrapper">
+
+               </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev">
+               <i class="ri-arrow-left-s-line"></i>
+            </div>
+
+            <div class="swiper-button-next">
+               <i class="ri-arrow-right-s-line"></i>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+         </div>
+         <img src="./assets/img/news-bg.webp" alt="" class="news__img">
+         <span class="news__gradient-top"></span>
+         <span class="news__gradient-bottom"></span>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact" id="contact">
+         <h2 class="contact__title">Contact Me</h2>
+
+         <div class="contact__container">
+            <img src="./assets/img/barbershop-chair.png" alt="image" class="contact__img">
+
+            <div class="contact__content">
+               <div>
+                  <h3 class="contact__subtitle">Write to me</h3>
+
+                  <div class="contact__social">
+                     <a href="tel:+351927303698" target="_blank">
+                        <i class="ri-phone-line"></i>
+                     </a>
+
+                     <a href="https://wa.me/+351927303698" target="_blank">
+                        <i class="ri-whatsapp-line"></i>
+                     </a>
+
+                     <a href="sms:+351927303698" target="_blank">
+                        <i class="ri-mail-line"></i>
+                     </a>
                   </div>
                </div>
-   
-               <!-- Navigation buttons -->
-               <div class="swiper-button-prev">
-                  <i class="ri-arrow-left-s-line"></i>
+
+               <div>
+                  <h3 class="contact__subtitle">Call me at the number</h3>
+
+                  <address class="contact__info">
+                     +351 927 303 698
+                  </address>
                </div>
-   
-               <div class="swiper-button-next">
-                  <i class="ri-arrow-right-s-line"></i>
+               <div>
+                  <h3 class="contact__subtitle">Find me here</h3>
+
+                  <address class="contact__info">
+                     Terrugem - Sintra - Lisboa <br>
+                     R. do Cruzeiro 19
+                  </address>
                </div>
-   
-               <!-- Pagination -->
-               <div class="swiper-pagination"></div>
             </div>
-         </section>
-      </main>
+         </div>
+      </section>
+   </main>
 
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
-         
-      </footer>
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container">
+         <ul class="footer__links">
+            <li>
+               <a href="#services" class="footer__link">Services</a>
+            </li>
+            <li>
+               <a href="#schedule" class="footer__link">Schedule</a>
+            </li>
+            <li>
+               <a href="#news" class="footer__link">News</a>
+            </li>
+         </ul>
+         <span class="footer__copy">
+            &#169; All Rights Reserved By <a href="https://github.com/kalebeccs">KalebeCCS.</a>
+         </span>
+         <a href="https://livroreclamacoes.pt/Inicio/" class="footer__complaint" target="_blank">
+            <img class="footer__img" src="./assets/img/livro-reclamacoes.png" alt="Livro de reclamacoes">
+         </a>
+      </div>
+   </footer>
 
-      <!--=============== SWIPER JS ===============-->
-      <script src="./assets/js/swiper-bundle.min.js"></script>
-      
-      <!--=============== MAIN JS ===============-->
-      <script src="./assets/js/main.js"></script>
-   </body>
+   <!--=============== SWIPER JS ===============-->
+   <script src="./assets/js/swiper-bundle.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="./assets/js/main.js"></script>
+</body>
+
 </html>
