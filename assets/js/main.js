@@ -135,7 +135,7 @@ const showRSS = (json) => {
                       <p class="card__description">
                         ${item.description}
                       </p>
-                      <a href="${item.link}" class="card__button" target="_blank">Read More</a>
+                      <a href="${item.link}" class="card__button" target="_blank" aria-label="read more about ${item.title}">Read More</a>
                     </div>
                   </article>
                   `
