@@ -14,8 +14,14 @@
    <!--=============== CSS ===============-->
    <link rel="stylesheet" href="assets/css/styles.css">
 
-   <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+   <link rel="shortcut icon" href="./assets/img/logo.webp" type="image/x-icon">
    <title>Home | Veiga Barbershop</title>
+
+   <!--=============== SWIPER JS ===============-->
+   <script src="./assets/js/swiper-bundle.min.js" defer></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="./assets/js/main.js" defer></script>
 </head>
 
 <body>
@@ -23,7 +29,7 @@
    <header class="header" id="header">
       <nav class="nav container">
          <a href="#" class="nav__logo">
-            <img class="nav__logo-img" src="./assets/img/logo-border.png" alt="Logo Veiga Barbershop">
+            <img class="nav__logo-img" src="./assets/img/logo-border.webp" alt="Logo Veiga Barbershop">
             Veiga Barbershop
          </a>
 
@@ -58,11 +64,11 @@
 
          <div class="nav__actions">
             <!-- Login button -->
-            <i class="ri-user-line nav__login" id="login-btn"></i>
+            <i class="ri-user-line nav__login" id="login-btn" aria-label="Login icon"></i>
 
             <!-- Toggle button -->
             <div class="nav__toggle" id="nav-toggle">
-               <i class="ri-menu-line"></i>
+               <i class="ri-menu-line" aria-label="Menu icon"></i>
             </div>
          </div>
       </nav>
@@ -184,7 +190,7 @@
          </p>
          <h1 class="banner__title">VEIGA BARBERSHOP</h1>
          <a href="#schedule" class="banner__button">Mark your cut</a>
-         <img src="./assets/img/bg-image.jpg" alt="" class="banner__img">
+         <img src="./assets/img/bg-image.webp" alt="" class="banner__img">
       </section>
 
       <!--==================== SERVICES ====================-->
@@ -199,10 +205,10 @@
             </div>
    
             <div class="services__images">
-               <img class="services__img" src="./assets/img/electric-razor.png" alt="comb image">
-               <img class="services__img" src="./assets/img/scissor.png" alt="comb image">
-               <img class="services__img" src="./assets/img/comb.png" alt="comb image">
-               <img class="services__img" src="./assets/img/razor.png" alt="comb image">
+               <img class="services__img" src="./assets/img/electric-razor.webp" alt="comb image">
+               <img class="services__img" src="./assets/img/scissor.webp" alt="comb image">
+               <img class="services__img" src="./assets/img/comb.webp" alt="comb image">
+               <img class="services__img" src="./assets/img/razor.webp" alt="comb image">
             </div>
          </div>
       </section>
@@ -225,7 +231,7 @@
 
       <!--==================== NEWS ====================-->
       <section class="news" id="news">
-         <h2 class="news__title">News by <img class="news__tile-img" src="./assets/img/fashionbeans-logo.png"
+         <h2 class="news__title">News by <img class="news__tile-img" src="./assets/img/fashionbeans-logo.webp"
                alt="fashionbeans logo"></h2>
 
          <div class="news__cards swiper">
@@ -257,23 +263,23 @@
          <h2 class="contact__title">Contact Me</h2>
 
          <div class="contact__container">
-            <img src="./assets/img/barbershop-chair.png" alt="image" class="contact__img">
+            <img src="./assets/img/barbershop-chair.webp" alt="image" class="contact__img">
 
             <div class="contact__content">
                <div>
                   <h3 class="contact__subtitle">Write to me</h3>
 
                   <div class="contact__social">
-                     <a href="tel:+351927303698" target="_blank">
-                        <i class="ri-phone-line"></i>
+                     <a href="tel:+351927303698" target="_blank" aria-label="phone icon">
+                        <i class="ri-phone-line" aria-hidden="true"></i>
                      </a>
 
-                     <a href="https://wa.me/+351927303698" target="_blank">
-                        <i class="ri-whatsapp-line"></i>
+                     <a href="https://wa.me/+351927303698" target="_blank" aria-label="whatsapp icon">
+                        <i class="ri-whatsapp-line" aria-hidden="true"></i>
                      </a>
 
-                     <a href="sms:+351927303698" target="_blank">
-                        <i class="ri-mail-line"></i>
+                     <a href="sms:+351927303698" target="_blank" aria-label="sms icon">
+                        <i class="ri-mail-line" aria-hidden="true"></i>
                      </a>
                   </div>
                </div>
@@ -320,16 +326,10 @@
             &#169; All Rights Reserved By <a href="https://github.com/kalebeccs">KalebeCCS.</a>
          </span>
          <a href="https://livroreclamacoes.pt/Inicio/" class="footer__complaint" target="_blank">
-            <img class="footer__img" src="./assets/img/livro-reclamacoes.png" alt="Livro de reclamacoes">
+            <img class="footer__img" src="./assets/img/livro-reclamacoes.webp" alt="Livro de reclamacoes">
          </a>
       </div>
    </footer>
-
-   <!--=============== SWIPER JS ===============-->
-   <script src="./assets/js/swiper-bundle.min.js"></script>
-
-   <!--=============== MAIN JS ===============-->
-   <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
