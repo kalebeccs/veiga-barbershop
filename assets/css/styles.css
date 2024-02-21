@@ -448,13 +448,19 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 2.5rem;
+}
+
+.banner__description{
+  text-align: center;
+  font-size: var(--h2-font-size);
+  margin-bottom: 1rem;
 }
 
 .banner__title{
   font-size: var(--h1-font-size);
   font-weight: var(--font-semi-bold);
   text-shadow: 0 4px 24px var(--black-color);
+  margin-bottom: 2.5rem;
 }
 
 .banner__button{
@@ -504,7 +510,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 2rem;
+  row-gap: 5rem;
   margin-inline: 1.75rem;
 }
 
@@ -519,12 +525,14 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 2.5rem;
+  flex-wrap: wrap;
+  gap: 2.5rem;
 }
 
 .services__img{
   width: 80px;
   filter: invert(1);
+  filter: drop-shadow(0 0 48px var(--img-shadow));
 }
 
 @media screen and (min-width: 576px) {
@@ -869,10 +877,27 @@ column-gap: .5rem;
 .contact__social a{
   color: var(--first-color);
   font-size: 1.5rem;
+  transition: color .4s;
+}
+
+.contact__social a:hover{
+  color: var(--second-color);
+  filter: drop-shadow(0 0 48px var(--first-color));
 }
 
 .contact__info{
   font-style: normal;
+}
+
+.contact__map,
+.contact__phone{
+  color: var(--white-color);
+  transition: color .4s;
+}
+
+.contact__map:hover,
+.contact__phone:hover{
+  color: var(--first-color);
 }
 
 @media screen and (min-width:1023px) {
@@ -928,7 +953,7 @@ column-gap: .5rem;
 
 .footer__link {
   color: var(--white-color);
-  transition: color .4s;
+  transition: text-decoration .4s;
 }
 
 .footer__link:hover,
@@ -945,6 +970,7 @@ column-gap: .5rem;
 .footer__copy a {
   color: var(--white-color);
   font-weight: var(--font-medium);
+  transition: text-decoration .4s;
 }
 
 .footer__complaint{
